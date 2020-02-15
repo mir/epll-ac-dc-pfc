@@ -25,17 +25,14 @@ mu_1= 200;   % (p.18, EPLL book by Karimi-Gh.)
 mu_2 = 20000; % (p.19, EPLL book by Karimi-Gh.)
 mu_3 = 400;% (p.19, EPLL book by Karimi-Gh.)
 U_i = 1;  % (p.19, EPLL book by Karimi-Gh.)
-omega_n = 20*2*pi;    % 10 Hz
 
-omega_ref = 50 * 2 * pi;    % 50 Hz
 
 u = U_i;
 K_vco = 1;
 mu = mu_1;
 tau_1 = 1/mu_2;
 tau_2 = mu_3/mu_2;
-omega_e_free = omega_n;
-omega_vco_free = omega_ref + omega_e_free;
+omega_vco_free = 50 * 2 * pi;    % 50 Hz
 theta_0 = 0;
 
 
